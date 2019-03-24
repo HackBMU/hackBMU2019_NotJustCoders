@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text=" Colour Blindness Test"
         android:textSize="40dp"
+        android:id="@+id/tv_next"
         android:layout_gravity="center"
         android:fontFamily="sans-serif-condensed-light"
         android:layout_margin="10dp"
