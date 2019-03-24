@@ -2,21 +2,6 @@
 ## What does Clorify do?
 Clorify is an ML based application that provides people suffering from color blindness the capability to drive flawlessly on roads using machine learning based object detection and tint shifting using image processing.Moreover,it helps the users to detect colors in general life to identify objects.
 
-## Technologies used
-Machine Learning <br> 
-Firebase <br> 
-Tensor Flow <br>
-AR Core <br>
-Android SDK <br>
-Nodejs <br>
-Maven <br>
-
-## Necessity
-1. Helping color blind people to drive 
-2. Easily recognising the colors of similar shades
-3. Test the severity level of color vision deficiency
-4. An economic solution to color blindness
-
 ## Working
 The system works in two modules:
 ##### DETECTION MODULE
@@ -27,6 +12,24 @@ According to the type of blindness, the colors of the objects undergo tint shift
 The camera module works on the basis of output given by the previous module and the processed tint shift as per the status of color blindness of the user. This module interacts with the real time environment of the user. The major objective of this module is to provide a more primitive viewing experience through detection of objects on road like traffic lights,traffic signals and vehicles' headlights.
 ##### AR MODULE
 It is a proposed idea which provides an AR based assistant which acts as a guide to the user
+
+![App Banner](https://i.ibb.co/zNpXXJt/colorify-1.png)
+
+## Necessity
+1. Helping color blind people to drive 
+2. Easily recognising the colors of similar shades
+3. Test the severity level of color vision deficiency
+4. An economic solution to color blindness
+
+## Technologies used
+Machine Learning <br> 
+Firebase <br> 
+Tensor Flow <br>
+AR Core <br>
+Android SDK <br>
+Nodejs <br>
+Maven <br>
+
 
 ## Applications
 1. Detect traffic lights and signals while driving
