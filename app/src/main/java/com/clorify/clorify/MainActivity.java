@@ -155,8 +155,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         });
         Spinner dropdown = findViewById(R.id.spinner);
-        String[] items = new String[]{"Test Image 1 (Text)", "Test Image 2 (Text)", "Test Image 3" +
-                " (Face)", "Test Image 4 (Object)", "Test Image 5 (Object)"};
+        String[] items = new String[]{"Test Image 1 ", "Test Image 2 ", "Test Image 3" +
+                "", "Test Image 4 ", "Test Image 5 "};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout
                 .simple_spinner_dropdown_item, items);
         dropdown.setAdapter(adapter);
@@ -458,23 +458,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         mGraphicOverlay.clear();
         switch (position) {
             case 0:
-                mSelectedImage = getBitmapFromAsset(this, "Please_walk_on_the_grass.jpg");
+                mSelectedImage = getBitmapFromAsset(this, "image_1.jpg");
                 break;
             case 1:
                 // Whatever you want to happen when the thrid item gets selected
-                mSelectedImage = getBitmapFromAsset(this, "nl2.jpg");
+                mSelectedImage = getBitmapFromAsset(this, "images_2.jpeg");
                 break;
             case 2:
                 // Whatever you want to happen when the thrid item gets selected
-                mSelectedImage = getBitmapFromAsset(this, "grace_hopper.jpg");
+                mSelectedImage = getBitmapFromAsset(this, "image_3.jpg");
                 break;
             case 3:
                 // Whatever you want to happen when the thrid item gets selected
-                mSelectedImage = getBitmapFromAsset(this, "tennis.jpg");
+                mSelectedImage = getBitmapFromAsset(this, "image_4.jpg");
                 break;
             case 4:
                 // Whatever you want to happen when the thrid item gets selected
-                mSelectedImage = getBitmapFromAsset(this, "mountain.jpg");
+                mSelectedImage = getBitmapFromAsset(this, "image_5.jpg");
                 break;
         }
         if (mSelectedImage != null) {
