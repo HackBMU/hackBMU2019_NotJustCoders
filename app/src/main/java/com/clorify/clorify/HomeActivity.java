@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -27,6 +28,9 @@ public class HomeActivity extends AppCompatActivity {
     private Button test;
     private EditText mname;
     private EditText deffect;
+    private  Button ishiharra;
+    private ImageView filter;
+    private Button submit;
     private static final int REQUEST_CAPTURE_IMAGE = 100;
    // private ImageView mImageView;
     private String imageFilePath;
@@ -36,9 +40,40 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         capture=findViewById(R.id.opencamera);
         test=findViewById(R.id.colour_blindtest);
-        deffect=findViewById(R.id.deffect);
-        mname=findViewById(R.id.name);
 
+        mname=findViewById(R.id.name);
+        submit=findViewById(R.id.Submit);
+        ishiharra=findViewById(R.id.ishainitest);
+        filter=(ImageView)findViewById(R.id.filter);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                deffect=(EditText) findViewById(R.id.defect);
+                String colotBlindnessType=(String)deffect.getText().toString();
+                Toast.makeText(HomeActivity.this, colotBlindnessType, Toast.LENGTH_SHORT).show();
+
+                if(colotBlindnessType.equals("Red_Green") )
+                {
+                    filter.setImageResource(R.color.red_filtercorrection);
+                }
+                else if(colotBlindnessType.equals("Yellow_Blue"))
+                {
+                    filter.setImageResource(R.color.yellow_filter);
+                }
+                else {
+                    Toast.makeText(HomeActivity.this, "enter a valid Colour Blindness like Red-Green ", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        });
+
+        ishiharra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(HomeActivity.this,WebviewTest.class);
+                startActivity(intent);
+            }
+        });
 
         test.setOnClickListener(new View.OnClickListener() {
             @Override
