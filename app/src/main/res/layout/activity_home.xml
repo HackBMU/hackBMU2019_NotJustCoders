@@ -5,18 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
-    android:background="#FFFCFC">
+    >
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.4"
+        android:id="@+id/filter"
+
+        />
     <android.support.v7.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="#FFDBE8"
+        android:alpha="0.7"
         android:orientation="vertical">
+
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
+
 
             <ImageView
                 android:layout_width="100dp"
@@ -49,7 +59,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/deffect"
+            android:id="@+id/defect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
@@ -60,6 +70,19 @@
             android:hint="Type of vision deficiency(If known)"
             android:padding="20dp"
             android:paddingTop="40dp" />
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/buttonshape2"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"
+            android:text="Submit"
+
+
+            />
 
         <Button
             android:id="@+id/opencamera"
@@ -74,15 +97,29 @@
 
 
             />
+        <Button
+            android:id="@+id/ishainitest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/buttonshape"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:alpha="0.8"
+            android:text="Ishihara color blind test" />
+
 
         <Button
             android:id="@+id/colour_blindtest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/buttonshape"
             android:padding="20dp"
+            android:alpha="0.8"
             android:textStyle="bold"
             android:text="Detect your colour deficiency" />
 
