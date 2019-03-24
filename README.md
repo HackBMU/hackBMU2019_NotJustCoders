@@ -3,7 +3,10 @@
 Clorify is an ML based application that provides people suffering from color blindness the capability to drive flawlessly on roads using machine learning based object detection and tint shifting using image processing.Moreover,it helps the users to detect colors in general life to identify objects.
 
 ## Working
-The system works in two modules:
+
+![App Banner](https://i.ibb.co/zNpXXJt/colorify-1.png)
+
+The system works in three modules:
 ##### DETECTION MODULE
 There are three main kinds of color blindness:<br> 1. Red-green color blindness (the most common)<br> 2. Blue-yellow color blindness <br>3. A complete absence of color vision — total color blindness (rare). <br>The user undergoes detection process in this module which uses image based detection according to user based inputs like identifying colors via pre-defined images. This will categorise the user's color blindness for further detection.
 ###### Tint Shift
@@ -13,7 +16,7 @@ The camera module works on the basis of output given by the previous module and 
 ##### AR MODULE
 It is a proposed idea which provides an AR based assistant which acts as a guide to the user
 
-![App Banner](https://i.ibb.co/zNpXXJt/colorify-1.png)
+
 
 ## Necessity
 1. Helping color blind people to drive 
