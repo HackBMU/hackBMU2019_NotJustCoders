@@ -4,5 +4,9 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 <color name="red_filtercorrection">#D84141</color>
-    <color name="yellow_filter">#FFF418</color>
+    <color name="yellow_filter">#FDF89F</color>
+    <color name="yellow">#F8CD38</color>
+    <color name="red">#FCB1B1</color>
+    <color name="blue">#D5BDFC</color>
+    <color name="green">#D8F878</color>
 </resources>

@@ -119,18 +119,18 @@ private TextView result1;
             rsc1=R.drawable.white;
             rsc=R.drawable.white;
             if(count==1) {
-                rsc = R.drawable.green;
-                rsc1=R.drawable.red;
+                rsc = R.color.green;
+                rsc1=R.color.red;
             }
             if(count==2){
 
-                rsc=R.drawable.blue;
-                rsc1=R.drawable.yellow;
+                rsc=R.color.blue;
+                rsc1=R.color.red;
             }
             if(count==3)
             {
-                rsc=R.drawable.yellow;
-                rsc1=R.drawable.red;
+                rsc=R.color.yellow;
+                rsc1=R.color.blue;
             }
             if(i==random)
             {

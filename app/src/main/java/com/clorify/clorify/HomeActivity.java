@@ -1,6 +1,7 @@
 package com.clorify.clorify;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
@@ -115,14 +116,17 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode,
                                     Intent data) {
+
         if (requestCode == 100) {
             Log.d("image",data.toString());
 
             Uri myUri = Uri.parse(imageFilePath);
 
       //      Picasso.with(HomeActivity.this).load(myUri).into(mImageView);
-//            Bitmap photo = (Bitmap) data.getExtras().get("data");
-//            mImageView.setImageBitmap(photo);
+           Bitmap photo = (Bitmap) data.getExtras().get("data");
+        Intent intent=new Intent(HomeActivity.this,imagedisplay.class);
+        intent.putExtra("image",photo);
+        startActivity(intent);
 
 
         }
